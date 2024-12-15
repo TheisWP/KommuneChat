@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KommuneChat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="centered-section">
+        <p><b>Hvis</b> du har formue, skal du angive nedenfor, hvor meget du har af de forskellige typer. 
+        <br>Vi har brug for oplysningerne, da din formue kan påvirke afgørelsen på din ansøgning.
+        <br>Udfyld kun de felter der er relevante for dig. Du skal ikke skrive minus foran beløbene.</p>
+
+        <div class="input-container">
+            <label for="amount">Kontanter</label>
+            <div class="input-wrapper">
+                <input type="text" id="amount" alt="[Angiv beløb]" placeholder="[Angiv beløb]" />
+                <span class="currency">Kr</span>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <label for="amount">Penge i banken eller andre steder</label>
+            <div class="input-wrapper">
+                <input type="text" id="amount" alt="[Angiv beløb]" placeholder="[Angiv beløb]" />
+                <span class="currency">Kr</span>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <label for="amount">Kapitalpension/pensionsopsparing/livsforsikring</label>
+            <div class="input-wrapper">
+                <input type="text" id="amount" alt="[Angiv beløb]" placeholder="[Angiv beløb]" />
+                <span class="currency">Kr</span>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <label for="amount">Værdipapirer</label>
+            <div class="input-wrapper">
+                <input type="text" id="amount" alt="[Angiv beløb]" placeholder="[Angiv beløb]" />
+                <span class="currency">Kr</span>
+            </div>
+        </div>
+
+        <div class="upload-container">
+            <h3>Vedhæft dokumentation</h3>
+            <p>Vedhæft dokumentation for din eventuelle formue, og dokumentation hvis du har givet formue bort de seneste 3 måneder.</p>
+            
+            <div class="upload-box">
+                <p>Træk nyt dokument hertil</p>
+                <label for="file-upload" class="upload-button">Vedhæft dokument</label>
+                <input type="file" id="file-upload" style="display: none;" />
+            </div>
+
+            <div class="button-container">
+                <button class="next-button">Næste</button>
+            </div>
+        </div>
+
+<!-- HTML addition for help textbox -->
+<div class="chatbot-container">
+    <div class="chatbot-box">
+        <p>Har du brug for hjælp?</p>
+    </div>
+</div>
+
+<!-- Existing chatbot integration -->
+<script> window.risposeWidgetId = "w76f51fg17h1" </script>
+<script defer src="https://rispose.com/cdn/script.js"></script>
+
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+/* Reset basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Center the content in the viewport */
+html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Centered section styling */
+.centered-section {
+    background-color: #fff;
+    padding: 20px;
+    width: 1200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Text styling for the main description */
+.centered-section p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Container for label and input */
+.input-container {
+    width: 500px;
+    padding-top: 20px;
+}
+
+/* Styling for the label aligned to the left */
+.input-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1em;
+    color: #333;
+}
+
+/* Wrapper for input and suffix */
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 8px;
+    padding-right: 30px; /* Space for the "Kr" suffix */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Styling for the "Kr" suffix */
+.currency {
+    position: absolute;
+    right: 10px;
+    color: #333;
+    font-size: 1em;
+}
+
+/* Container for the upload section */
+.upload-container {
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+/* Title styling */
+.upload-container h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Description styling */
+.upload-container p {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+/* Styling for the upload box */
+.upload-box {
+    border: 1px dashed #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    color: #888;
+    position: relative;
+}
+
+/* Styling for the button */
+.upload-button {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 10px;
+    background-color: #5a6782;
+    color: #fff;
+    font-size: 0.9em;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Hide the actual file input */
+input[type="file"] {
+    display: none;
+}
+
+/* Change the appearance of the button on hover */
+.upload-button:hover {
+    background-color: #4a5670;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.next-button {
+    background-color: #28a745; /* Grøn farve */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.next-button:hover {
+    background-color: #218838; /* Mørkere grøn farve ved hover */
+    transform: scale(1.05); /* Let forstørrelse ved hover */
+}
+
+.next-button:active {
+    background-color: #1e7e34; /* Endnu mørkere grøn ved klik */
+    transform: scale(0.95); /* Let komprimering ved klik */
+}
+
+/* CSS for the help textbox */
+.chatbot-container {
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    color: #333;
+    z-index: 1000;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.chatbot-container:hover {
+    transform: scale(1.05);
+    background-color: #e9ecef;
+}
+
+.chatbot-box p {
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+}
